@@ -1,0 +1,8 @@
+{
+	"name": "HW3-Js-Functions",
+	"version": "0.0.1",
+	"author": "Gasanov Magomed",
+	"scripts": {
+		"start": "node splitAndMerge.js"
+	}
+}
