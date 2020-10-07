@@ -1,4 +1,6 @@
-// Function
+// 1splitAndMerge.js
+
+// Function  
 function splitAndMerge(str, sp) {
     return sp ? str.split('').map(function(letter){return letter+sp}).join('').slice(0,-1) : str;
 }

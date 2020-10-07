@@ -1,3 +1,5 @@
+// 4reverseString.js
+
 // Function
 function reverse(str) {
     return str.split(" ").map(element => element.split('').reverse().join('')).join(" ");
