@@ -3,6 +3,6 @@
 	"version": "0.0.1",
 	"author": "Gasanov Magomed",
 	"scripts": {
-        "start": "node 2convert.js"
+        "start": "node 3toCamelCase.js"
 	}
 }
