@@ -3,6 +3,6 @@
 	"version": "0.0.1",
 	"author": "Gasanov Magomed",
 	"scripts": {
-        "start": "node 5stringExpansion.js"
+        "start": "node 7transform.js"
 	}
 }
