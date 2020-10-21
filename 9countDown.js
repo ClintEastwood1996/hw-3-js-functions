@@ -2,14 +2,14 @@
 
 // Functions
 function countDown(num) {
-    const fixNum = num;
-    for (let i = num; i >= 0; i--) {
-        setTimeout(function() {console.log(fixNum - i)}, i*1000);
-        num = num - 1; 
+    for (var i = num; i >= 0; i--) {
+        (function(index) {
+            setTimeout(function() {console.log(num-index)}, 1000*i+1000);
+        }(i))
     }
 }
 
 
 
 // Testing
-countDown(25)
+countDown(5)

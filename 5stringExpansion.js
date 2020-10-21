@@ -7,8 +7,8 @@ function stringExpansion(str) {
         function(elem,index,arr) {
         if (+elem) {
             if (!(+arr[index+1])) {
-                let newStringArr = [];
-                for (let i = 0; i < elem; i++) {
+                var newStringArr = [];
+                for (var i = 0; i < elem; i++) {
                     newStringArr.push(arr[index+1])
                 }
                 arr[index+1] = newStringArr.join("");

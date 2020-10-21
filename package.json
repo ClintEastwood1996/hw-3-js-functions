@@ -3,6 +3,6 @@
 	"version": "0.0.1",
 	"author": "Gasanov Magomed",
 	"scripts": {
-        "start": "node 10bindPolyfill.js"
+        "start": "node 9countDown.js"
 	}
 }

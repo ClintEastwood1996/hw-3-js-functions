@@ -3,8 +3,8 @@
 
 // Function
 function convert(obj) {
-    let arr = [];
-    for (let x in obj) {
+    var arr = [];
+    for (var x in obj) {
         arr.push([x,obj[x]])
     }
     return arr

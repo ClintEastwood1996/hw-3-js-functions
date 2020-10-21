@@ -3,7 +3,7 @@
 
 // // Function
 Function.prototype.myBind = function (context, ...rest) {
-    let MainFunction = this;
+    var MainFunction = this;
     return function(...args) {
         return MainFunction.apply(context, rest.concat(args))
     }
