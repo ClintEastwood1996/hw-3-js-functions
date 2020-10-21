@@ -1,10 +1,14 @@
 // 8sum.js
 
 // Functions
-function sum(...args) {
-    return Array.isArray(args[0]) ? args[0].reduce(function(sum, current) {return sum + current}) : sum(args);
+function sum() {
+    if (arguments.length >= 1) {
+    return (arguments[0] + sum.apply(null,(Array.prototype.slice.call(arguments, 1))))
+    } else {
+        return 0
+    }
 }
 
 // Testing
-console.log(sum(2,-4,4,23,3,-90));
+console.log(sum(3,6,8));
 

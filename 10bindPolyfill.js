@@ -2,10 +2,12 @@
 
 
 // // Function
-Function.prototype.myBind = function (context, ...rest) {
+Function.prototype.myBind = function (context) {
     var MainFunction = this;
-    return function(...args) {
-        return MainFunction.apply(context, rest.concat(args))
+    var MainArgs = Array.prototype.slice.call(arguments,1);
+    return function() {
+        var args = Array.prototype.slice.call(arguments);
+        return MainFunction.apply(context, MainArgs.concat(args))
     }
 }
 

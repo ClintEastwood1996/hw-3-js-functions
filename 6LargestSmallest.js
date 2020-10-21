@@ -1,12 +1,12 @@
 // 6LargestSmallest.js
 
 // Functions
-function largest(...args) {
-    return Math.max.apply(null,args);
+function largest() {
+    return Math.max.apply(null, arguments);
 }
 
-function smallest(...args) {
-    return Math.min.apply(null,args);
+function smallest() {
+    return Math.min.apply(null, arguments);
 }
 
 
