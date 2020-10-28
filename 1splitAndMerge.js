@@ -2,13 +2,21 @@
 
 // Function  
 function splitAndMerge(str, sp) {
-    return sp ? str.split('').map(function(letter){return letter+sp}).join('').slice(0,-1) : str;
+    if (!sp) return str
+
+    var newStr = str.split(' ').map(function(subStr) {
+        return subStr.split('').map(function(letter){
+            return letter+sp})
+            .join('').slice(0,-1)})
+            .join(' ');
+
+    return newStr;
 }
 
 // Testing
-console.log(splitAndMerge('Привет','!'));
-console.log(splitAndMerge('Привет',''));
-console.log(splitAndMerge('Привет',' '));
-console.log(splitAndMerge('Привет','6'));
+console.log(splitAndMerge('Hello world','!'));
+console.log(splitAndMerge('Hello world',''));
+console.log(splitAndMerge('Hello world',' '));
+console.log(splitAndMerge('Hello world',','));
 
 
