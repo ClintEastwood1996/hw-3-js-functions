@@ -5,7 +5,7 @@
 function convert(obj) {
     var arr = [];
     for (var x in obj) {
-        arr.push([x,obj[x]])
+        arr.push([x,obj[x]]);
     }
     return arr
 }
