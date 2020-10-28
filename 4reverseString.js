@@ -2,7 +2,7 @@
 
 // Function
 function reverse(str) {
-    return str.split(" ").map(element => element.split('').reverse().join('')).join(" ");
+    return str.split(" ").map(function(element) {return element.split('').reverse().join('')}).join(" ");
 }
 
 // Testing
